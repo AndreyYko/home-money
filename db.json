@@ -1,0 +1,195 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "wfm@mail.ru",
+      "password": "12345678",
+      "name": "Администратор"
+    },
+    {
+      "email": "abiille@mail.ru",
+      "password": "andruxa123454",
+      "name": "flackery",
+      "id": 2
+    },
+    {
+      "email": "andrushagalushka@gmail.com",
+      "password": "desert123454",
+      "name": "desert",
+      "id": 3
+    },
+    {
+      "email": "test@mail.ru",
+      "password": "12345678",
+      "name": "Господь",
+      "id": 4
+    },
+    {
+      "email": "test2@mail.ru",
+      "password": "123456",
+      "name": "Flackery",
+      "id": 5
+    }
+  ],
+  "bill": {
+    "value": 190100,
+    "currency": "RUB"
+  },
+  "categories": [
+    {
+      "name": "Дом",
+      "capacity": 35000,
+      "id": 1
+    },
+    {
+      "name": "Еда",
+      "capacity": 10000,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Машина",
+      "capacity": 7000
+    },
+    {
+      "name": "Одежда",
+      "capacity": 150000,
+      "id": 4
+    },
+    {
+      "name": "Ребенок",
+      "capacity": 150000,
+      "id": 5
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "type": "income",
+      "amount": 1250,
+      "category": 2,
+      "date": "12.06.2017 19:49:02",
+      "description": "Подарили еду в гостях"
+    },
+    {
+      "id": 2,
+      "type": "outcome",
+      "amount": 1300,
+      "category": 1,
+      "date": "13.06.2017 19:49:02",
+      "description": "Купил посудомоечную машину"
+    },
+    {
+      "type": "income",
+      "amount": 1480,
+      "category": 2,
+      "date": "17.06.2017 14:00:48",
+      "id": 3,
+      "description": "Поход в окей с баллами. Бесплатная еда"
+    },
+    {
+      "type": "outcome",
+      "amount": 2470,
+      "category": 2,
+      "date": "17.06.2017 14:00:58",
+      "id": 4,
+      "description": "Закупка на неделю"
+    },
+    {
+      "type": "outcome",
+      "amount": 4000,
+      "category": 3,
+      "date": "10.06.2017 14:01:58",
+      "id": 5,
+      "description": "Заправка + проход ТО"
+    },
+    {
+      "type": "outcome",
+      "amount": 100,
+      "category": 2,
+      "date": "24.06.2018 17:40:57",
+      "description": "Pizza",
+      "id": 6
+    },
+    {
+      "type": "income",
+      "amount": 55000,
+      "category": 1,
+      "date": "24.06.2018 17:41:27",
+      "description": "Квартиранты",
+      "id": 7
+    },
+    {
+      "type": "outcome",
+      "amount": 5000,
+      "category": 1,
+      "date": "24.06.2018 17:45:14",
+      "description": "Налоги",
+      "id": 8
+    },
+    {
+      "type": "outcome",
+      "amount": 150,
+      "category": 2,
+      "date": "24.06.2018 17:45:33",
+      "description": "Вода",
+      "id": 9
+    },
+    {
+      "type": "outcome",
+      "amount": 10000,
+      "category": 5,
+      "date": "24.06.2018 17:57:07",
+      "description": "В садик",
+      "id": 10
+    },
+    {
+      "type": "outcome",
+      "amount": 80000,
+      "category": 4,
+      "date": "25.06.2018 00:12:02",
+      "description": "Gucci",
+      "id": 11
+    },
+    {
+      "type": "income",
+      "amount": 250000,
+      "category": 5,
+      "date": "25.06.2018 00:30:41",
+      "description": "Продал ребенка",
+      "id": 12
+    },
+    {
+      "type": "outcome",
+      "amount": 100000,
+      "category": 5,
+      "date": "25.06.2018 00:30:59",
+      "description": "Купил коляску",
+      "id": 13
+    },
+    {
+      "type": "outcome",
+      "amount": 20000,
+      "category": 1,
+      "date": "25.06.2018 00:31:39",
+      "description": "Ремонт",
+      "id": 14
+    },
+    {
+      "type": "outcome",
+      "amount": 250,
+      "category": 2,
+      "date": "25.06.2018 14:27:52",
+      "description": "Хот-дог",
+      "id": 15
+    },
+    {
+      "type": "income",
+      "amount": 500,
+      "category": 2,
+      "date": "29.06.2018 13:13:26",
+      "description": "Продал хот-дог",
+      "id": 16
+    }
+  ]
+}

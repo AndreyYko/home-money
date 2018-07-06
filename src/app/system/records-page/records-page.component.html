@@ -1,0 +1,15 @@
+<div class="title-block">
+  <h3 class="title">
+    Страница записей <span class="sparkline bar"></span>
+  </h3>
+</div>
+<section class="section text-center" *ngIf="!isLoaded">Loading...</section>
+<section class="section" *ngIf="isLoaded">
+  <div class="row">
+    <flack-add-event [categories]="categories"></flack-add-event>
+    <flack-add-category (addCategory)="onAddCategory($event)"></flack-add-category>
+  </div>
+  <div class="row">
+    <flack-edit-category [categories]="categories" (categoryEdit)="onCategoryEdit($event)"></flack-edit-category>
+  </div>
+</section>

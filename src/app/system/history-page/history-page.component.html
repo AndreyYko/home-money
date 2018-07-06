@@ -1,0 +1,12 @@
+<div class="title-block">
+  <h3 class="title">
+    Страница истории <span class="sparkline bar"></span>
+  </h3>
+</div>
+<div *ngIf="!isLoaded" class="text-center">Loading...</div>
+<div *ngIf="isLoaded">
+  <flack-history-chart [data]="chartData"></flack-history-chart>
+  <flack-history-events [categories]="categories" [events]="events"></flack-history-events>
+  <!--MODAL-->
+  <flack-history-filter></flack-history-filter>
+</div>

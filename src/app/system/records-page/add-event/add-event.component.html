@@ -1,0 +1,53 @@
+<div class="col-md-6">
+  <div class="card">
+    <div class="card-header bordered">
+      <div class="header-block">
+        <h3 class="title">Добавить событие</h3>
+      </div>
+    </div>
+    <div class="card-block">
+      <div *ngIf="message.text" class="alert alert-{{ message.type }}">{{ message.text }}</div>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label class="control-label" for="category">Выберите категорию</label>
+          <select class="form-control" id="category" formControlName="category">
+            <option *ngFor="let category of categories" [value]="category.id">{{ category.name }}</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="control-label">Выберите тип</label>
+          <div *ngFor="let type of types">
+            <label>
+              <input class="radio" name="type" type="radio" [value]="type.type" formControlName="type">
+              <span>{{ type.label }}</span>
+            </label>
+          </div>
+        </div>
+        <div class="form-group" [ngClass]="{'has-error': form.get('value').invalid && form.get('value').touched && form.get('value')['errors']['min']}">
+          <label class="control-label" for="amount">Введите сумму</label>
+          <input type="number" value="0" id="amount" class="form-control" formControlName="value" min="1">
+          <span
+            class="form-help-text"
+            *ngIf="form.get('value').invalid && form.get('value').touched && form.get('value')['errors']['min']"
+          >
+            Сумма должна быть выше нуля!
+          </span>
+        </div>
+        <div
+          class="form-group"
+          [ngClass]="{'has-error': form.get('description').invalid && form.get('description').touched}"
+        >
+          <label class="control-label" for="description">Введите название</label>
+          <input type="text" id="description" class="form-control" formControlName="description">
+          <span
+            class="form-help-text"
+            *ngIf="form.get('description').invalid && form.get('description').touched"
+          >
+            Описание не должно быть пустым!
+          </span>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Добавить</button>
+      </form>
+    </div>
+  </div>
+</div>

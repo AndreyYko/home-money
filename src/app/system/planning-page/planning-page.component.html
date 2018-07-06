@@ -1,0 +1,7 @@
+<div class="title-block">
+  <h3 class="title">
+    Страница планирования <span class="sparkline bar"></span>
+  </h3>
+</div>
+<section class="section text-center" *ngIf="!isLoaded">Loading...</section>
+<flack-costs *ngIf="isLoaded" [bill]="bill" [categories]="categories" [events]="events"></flack-costs>
